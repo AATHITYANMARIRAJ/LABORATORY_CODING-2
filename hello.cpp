@@ -1,20 +1,28 @@
 #include <iostream>
-#include <string>
+#include <cstring>
 using namespace std;
 int main(){
-	string a;
-	cout<<"enter the string:\n";
-	getline(cin,a);
+	char quote[]="hi all hello";
 	string b="hello";
 	int flag=0;
-	
-	string s;
-	for(int i=0;i<n;i++){
-		count=0;
-		if(a[i]!==' '){
-			s+=a[i];
+	int n=b.length();
+	char* word=strtok(quote," ");
+	for(int i=1;i<n;i++){
+		if(word==b){
+			flag=1;
+			break;
 		}
-		
+		else{
+			word=strtok(NULL," ");
+		}
 	}
+	
+	if(flag==1){
+		cout<<"hello is present\n";
+	}
+	else{
+		cout<<"hello is not present\n";
+	}
+	
 	return 0;
 }

@@ -1,28 +1,36 @@
-#include <iostream>
-#include <cstring>
+#include <bits/stdc++.h>
 using namespace std;
 int main(){
-	char quote[]="hi all hello";
-	string b="hello";
-	int flag=0;
-	int n=b.length();
-	char* word=strtok(quote," ");
-	for(int i=1;i<n;i++){
-		if(word==b){
-			flag=1;
-			break;
+	string a="Welcome to all, Hello Take your seat";
+	int n=a.length();
+	string b="Hello";
+	string s;
+	for(int i=0;i<n;i++){
+		if(a[i]==','){
+			continue;
 		}
 		else{
-			word=strtok(NULL," ");
+			s+=a[i];
 		}
+		
 	}
+	cout<<s<<"\n";
 	
-	if(flag==1){
-		cout<<"hello is present\n";
+	int flag=0;
+	int n1=s.length();
+	
+	stringstream ss(s);  
+    string word;
+    while (ss >> word) { // Extract word from the stream.
+        if(word=="Hello"){
+        	flag=1;
+		}
+    }
+    if(flag==1){
+    	cout<<"HELLO is present";
 	}
 	else{
-		cout<<"hello is not present\n";
+		cout<<"not present";
 	}
-	
-	return 0;
+    return 0;
 }

@@ -19,7 +19,7 @@ int main(){
 	int flag=0;
 	int n1=s.length();
 	
-	stringstream ss(s);  
+	stringstream ss(s);  //to break sentence into words
     string word;
     while (ss >> word) { // Extract word from the stream.
         if(word=="Hello"){

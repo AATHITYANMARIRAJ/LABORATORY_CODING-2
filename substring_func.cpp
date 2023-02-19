@@ -1,3 +1,7 @@
+/*
+9.	If Substring function is given as SUBSTRING(string, position, length), find S(5,9) if S=”Welcome to world of C++ Programming”.
+*/
+
 #include <iostream>
 #include <string>
 using namespace std;

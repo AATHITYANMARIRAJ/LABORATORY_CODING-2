@@ -1,21 +1,33 @@
 
+
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
 	string a;
+	string a1;
 	string b;
 	cout<<"enter the string\n";
 	getline(cin,a);
-	transform(a.begin(),a.end(),a.begin(),::tolower);//converting the string to lowercase
 	int n=a.length();
-	for(int i=0;i<n;i++){
-		cout<<a[i]<<"\n";
-		if(a[i]=='a'||a[i]=='e'||a[i]=='i'||a[i]=='o'||a[i]=='u'||a[i]==' '){
-			cout<<"hi"<<"\n";
-			b+=a[i];
+	
+	//for removing comma
+	for(int j=0;j<n;j++){
+		if(a[j]==','){
+			continue;
+		}              
+		else{
+			a1+=a[j];
 		}
 	}
 	
-	cout<<"the string in lowercase is \n"<<b;
+	//converting the string to lowercase
+	transform(a1.begin(),a1.end(),a1.begin(),::tolower);
+	for(int i=0;i<n;i++){
+		if(a1[i]=='a'||a1[i]=='e'||a1[i]=='i'||a1[i]=='o'||a1[i]=='u'||a1[i]==' '){
+			b+=a1[i];
+		}
+	}
+	
+	cout<<"the string with vowels is \n"<<b;
 	return 0;
 }

@@ -1,3 +1,7 @@
+/*
+8.	List all the Substring that can be Formed from the string “ABCD”
+*/
+
 #include <iostream>
 using namespace std;
 

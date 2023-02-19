@@ -1,3 +1,7 @@
+?*
+2.	Check palindrome (or) not
+*/
+
 #include <iostream>
 #include <string>
 using namespace std;

@@ -1,5 +1,6 @@
-
-
+/*
+6.	Give a Statement “ I am Okay,Task Completed” and Delect all Conconents from String.
+*/
 #include<bits/stdc++.h>
 using namespace std;
 int main(){

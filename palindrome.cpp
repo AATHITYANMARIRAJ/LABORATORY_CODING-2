@@ -1,4 +1,4 @@
-?*
+/*
 2.	Check palindrome (or) not
 */
 

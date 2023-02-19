@@ -1,3 +1,6 @@
+/*
+10.	Take statement ,count words and find largest word in a statement.
+*/
 #include <bits/stdc++.h>
 using namespace std;
 int main(){

@@ -1,5 +1,5 @@
 /*
-6.	Give a Statement “ I am Okay,Task Completed” and Delect all Conconents from String.
+6.	Give a Statement “ I am Okay,Task Completed” and Delete all Conconents from String.
 */
 #include<bits/stdc++.h>
 using namespace std;

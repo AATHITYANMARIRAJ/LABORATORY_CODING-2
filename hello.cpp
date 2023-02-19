@@ -1,32 +1,37 @@
-
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 int main(){
-	string a;
-	string a1;
-	string b;
-	cout<<"enter the string\n";
-	getline(cin,a);
+	string a="Welcome to all, Hello Take your seat";
 	int n=a.length();
-	
-	//for removing comma
-	for(int j=0;j<n;j++){
-		if(a[j]==','){
-			continue;
-		}              
-		else{
-			a1+=a[j];
-		}
-	}
-	
-	//converting the string to lowercase
-	transform(a1.begin(),a1.end(),a1.begin(),::tolower);
+	string b="Hello";
+	string s;
 	for(int i=0;i<n;i++){
-		if(a1[i]=='a'||a1[i]=='e'||a1[i]=='i'||a1[i]=='o'||a1[i]=='u'||a1[i]==' '){
-			b+=a1[i];
+		if(a[i]==','){
+			continue;
 		}
+		else{
+			s+=a[i];
+		}
+		
 	}
+	cout<<s<<"\n";
 	
-	cout<<"the string with vowels is \n"<<b;
-	return 0;
+	int flag=0;
+	int n1=s.length();
+	
+	stringstream ss(s);  
+    string word;
+    while (ss >> word) { // Extract word from the stream.
+        if(word=="Hello"){
+        	flag=1;
+		}
+    }
+    if(flag==1){
+    	cout<<"HELLO is present";
+	}
+	else{
+		cout<<"not present";
+	}
+    return 0;
+	
 }

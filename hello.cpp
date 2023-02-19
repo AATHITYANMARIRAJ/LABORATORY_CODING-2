@@ -1,3 +1,7 @@
+/*
+4.	Check if the word “Hello” is Present in the given Statement “Welcome to all, Hello Take Your Seat”
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 int main(){

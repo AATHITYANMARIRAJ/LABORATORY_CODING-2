@@ -37,7 +37,7 @@ int main(){
 		arr[in]=count;
 		in++;
 	}
-		
+	cout<<"there are "<<c<<"words.\n";	
 	//to find the greatest no
 	int g_no=0;
 	for(int k=0;k<c;k++){

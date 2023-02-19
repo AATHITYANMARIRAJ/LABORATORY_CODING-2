@@ -1,3 +1,4 @@
+
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
@@ -18,7 +19,8 @@ int main(){
 		}
 	}
 	
-	transform(a1.begin(),a1.end(),a1.begin(),::tolower);//converting the string to lowercase
+	//converting the string to lowercase
+	transform(a1.begin(),a1.end(),a1.begin(),::tolower);
 	for(int i=0;i<n;i++){
 		if(a1[i]=='a'||a1[i]=='e'||a1[i]=='i'||a1[i]=='o'||a1[i]=='u'||a1[i]==' '){
 			b+=a1[i];

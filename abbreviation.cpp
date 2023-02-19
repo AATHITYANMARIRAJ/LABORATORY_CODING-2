@@ -1,3 +1,8 @@
+/*
+5.	Take Input as Full Name and Display the abbreviations of the First and Middle name Except the Last Name  For Example: Input string:  Mahendra Singh Dhoni Output String: M.S.
+Dhoni.
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
  
